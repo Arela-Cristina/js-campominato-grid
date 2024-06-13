@@ -4,6 +4,8 @@ let containerMinato = document.getElementById('campoMinato');
 let myButton = document.getElementById('myButton');
 // console.log(myButton);
 
+
+
 // //aggiungiamo evento al bottone
 myButton.addEventListener('click', function () {
     containerMinato.innerHTML = '';
@@ -36,11 +38,25 @@ myButton.addEventListener('click', function () {
     }
 });
 
+const myButton1 = document.getElementById('myButton1');
+// console.log(myButton);
 
+myButton1.addEventListener('click', function () {
+    containerMinato.innerHTML = '';
 
+    for (i = 1; i <= 81; i++) {
+        console.log('81 cuadritos', i);
 
+        let campoSingolo1 = gameStructure('div', 'squareOrange');
+        containerMinato.append(campoSingolo1);
 
-
+        campoSingolo1.addEventListener('click', function () {
+            campoSingolo1.classList.toggle('squareClickGreen');
+            //ed emetto un messaggio in console con il numero  della cella cliccata.
+            console.log('Cella clicata', this.innerHTML);
+        });
+    }
+});
 
 
 
