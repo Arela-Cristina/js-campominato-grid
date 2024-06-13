@@ -13,11 +13,13 @@ main {
     justify-content: center;
 }
 
-section {
+#campoMinato {
     display: flex;
     flex-wrap: wrap;
     width: 42%;
     justify-content: center;
+    border: solid 8px #673AB7;
+    padding: 20px 3px;
 }
 
 .square {
@@ -28,8 +30,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .squareClick {
     background-color: yellow;
+}
+
+.active {
+    display: flex;
 }

@@ -1,6 +1,13 @@
 let containerMinato = document.getElementById('campoMinato');
 console.log(containerMinato);
 
+let myButton = document.getElementById('myButton');
+console.log(myButton);
+
+//aggiungiamo evento al bottone
+myButton.addEventListener('click', function () {
+    containerMinato.classList.add('active');
+});
 
 //creiamo 100 celle con il ciclo for
 for (i = 1; i <= 100; i++) {
@@ -26,7 +33,6 @@ for (i = 1; i <= 100; i++) {
         campoSingolo.classList.toggle('squareClick');
         //ed emetto un messaggio in console con il numero  della cella cliccata.
         console.log('Cella clicata', this.innerHTML);
-
     });
 }
 
@@ -46,7 +52,3 @@ for (i = 1; i <= 100; i++) {
 
 
 
-
-
-
-//
