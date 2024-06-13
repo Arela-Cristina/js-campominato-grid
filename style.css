@@ -34,8 +34,11 @@ button {
     justify-content: center;
     border: solid 8px #673AB7;
     padding: 20px 3px;
+    height: 520px;
+
 }
 
+/* SQUARE 100 X100 */
 .square {
     background-color: rgb(0 255 123);
     width: 50px;
@@ -50,6 +53,20 @@ button {
     background-color: yellow;
 }
 
-.active {
+/* SQUARE 9 X 9  */
+
+.squareOrange {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #6e0883;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.squareClickGreen {
+    background-color: rgb(117, 248, 10);
+}
+
+/* SQUARE 7 X 7  */
