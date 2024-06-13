@@ -6,11 +6,25 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 main {
     display: flex;
     justify-content: center;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #campoMinato {
@@ -30,7 +44,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 .squareClick {
